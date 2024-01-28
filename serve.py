@@ -11,6 +11,7 @@ def seed_get():
 @app.route('/', methods=['POST'])
 def seed_post():
     subprocess.Popen(['python3', './stress_cpu.py'])
+    return ''
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
